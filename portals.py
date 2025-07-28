@@ -1,6 +1,9 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-auth = ""
+load_dotenv()
+auth = os.getenv("auth")
 
 
 class PortalsMarketClient:
