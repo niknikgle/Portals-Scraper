@@ -45,8 +45,7 @@ class PortalsMarketClient:
         return response.json()
 
 
-auth_token = auth
-client = PortalsMarketClient(auth_token)
+client = PortalsMarketClient(auth)
 
 # Search NFTs
 for nft in client.search_nfts():
